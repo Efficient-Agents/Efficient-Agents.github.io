@@ -99,6 +99,17 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+.hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current) {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current):hover {
+  color: #363636;
+}
+
+
 .hero-body {
   padding: 4rem 1.5rem;
 }
@@ -750,4 +761,105 @@ a:focus {
 }
 
 
+/* navigation style */
+.nav-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.nav-btn {
+    padding: 12px 24px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn.active {
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.memory-btn {
+    background-color: #F1F9FC;
+    border-color: #41C1E7;
+    color: #1a7a94;
+}
+
+.tool-btn {
+    background-color: #EEFEF2;
+    border-color: #30BC75;
+    color: #1a6e42;
+}
+
+.planning-btn {
+    background-color: #F7F1FD;
+    border-color: #A085A8;
+    color: #5a4460;
+}
+
+.page {
+    display: none;
+    padding: 30px;
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+.page.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .memory-page {
+    background-color: #F1F9FC;
+    border: 2px solid #41C1E7;
+}
+
+.tool-page {
+    background-color: #EEFEF2;
+    border: 2px solid #30BC75;
+}
+
+.planning-page {
+    background-color: #F7F1FD;
+    border: 2px solid #A085A8;
+} */
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h1 {
+    margin: 12px 0 12px 0;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.content.paper-list {
+  margin-bottom: 1.2rem;
+}
