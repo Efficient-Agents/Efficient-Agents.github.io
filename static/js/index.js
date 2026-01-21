@@ -140,3 +140,15 @@ $(document).ready(function() {
     setupVideoCarouselAutoplay();
 
 })
+
+function navigate(pageName) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(pageName).classList.add('active');
+
+    event.target.classList.add('active');
+}
